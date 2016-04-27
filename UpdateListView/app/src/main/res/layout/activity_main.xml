@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity" >
+
+
+    <ViewFlipper
+        android:id="@+id/flipper1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/lay1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+    <com.example.devine_it.updatelistview.EndlessListView android:id="@+id/el"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"  />
+
+</RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/lay2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity" >
+
+
+
+
+
+            <fragment
+                android:id="@+id/map"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                class="com.google.android.gms.maps.SupportMapFragment" />
+
+            <TextView
+
+                android:id="@+id/lb"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="70dp"
+                android:background="#FFFFE0"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:textColor="#008000"
+                android:textSize="15dp"
+
+                />
+
+
+            <TextView
+
+                android:id="@+id/show"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="40dp"
+                android:background="#FFFFE0"
+                android:gravity="center"
+                android:layout_below="@+id/lb"
+                android:textColor="#008000"
+                android:textSize="15dp"
+
+                />
+
+        </RelativeLayout>
+
+    </ViewFlipper>
+
+
+
+
+
+
+</RelativeLayout>
